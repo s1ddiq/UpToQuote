@@ -12,6 +12,13 @@
   --font-mono: var(--font-geist-mono);
 }
 
+@layer utilities {
+  .secondary-color {
+    color: #262629ff;
+    background-color: #262629ff;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
