@@ -35,6 +35,22 @@ export const fetchAllQuotes = async () => {
     }
 };
 
+export const fetchQuoteById = async (id: string) => {
+    try {
+        const response = await fetch(`https://qapi.vercel.app/api/quotes/${id}`);
+
+        if(!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+
+        const data = await response.json();
+        return data;
+
+    } catch (error) {
+        handleError('Error fetching quote:', error);
+    }
+}
+
 {/*const response = await fetch('https://zenquotes.io/api/quotes/', {
             method: 'GET',
             headers: {

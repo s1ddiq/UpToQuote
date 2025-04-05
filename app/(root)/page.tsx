@@ -17,7 +17,6 @@ const QuotesPage = () => {
       setQuote(quote);
       const quotes = await fetchAllQuotes();
       setQuotes(quotes);
-      console.log(quotes);
     };
     func();
   }, []);
