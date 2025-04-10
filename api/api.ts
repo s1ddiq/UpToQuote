@@ -20,9 +20,10 @@ export const fetchQuote = async () => {
     }
 };
 
-export const fetchAllQuotes = async () => {
+export const fetchAllQuotes = async (limit: number, maxLength: number, minLength?: number) => {
     try {
-        const response = await fetch('https://qapi.vercel.app/api/quotes');
+        const response = await fetch(`https://api.quotable.io/quotes/random?limit=50&maxLength=${maxLength}${minLength ? `&minLength=${minLength}` : ''}`);
+
 
         if (!response.ok) {
             throw new Error('Network response was not ok');
@@ -37,7 +38,7 @@ export const fetchAllQuotes = async () => {
 
 export const fetchQuoteById = async (id: string) => {
     try {
-        const response = await fetch(`https://qapi.vercel.app/api/quotes/${id}`);
+        const response = await fetch(`https://api.quotable.io/quotes/${id}`);
 
         if(!response.ok) {
             throw new Error('Network response was not ok');
