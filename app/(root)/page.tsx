@@ -54,6 +54,7 @@ const QuotesPage = () => {
       <h1 className="text-6xl text-center opacity-10 font-bold">
         Stay up to Quote :&#41;
       </h1>
+      <div className="w-full h-2 rounded-full bg-gray-400 opacity-1 py-4 m-4"></div>
       <div className="flex justify-center items-center w-full h-screen flex-row flex-wrap gap-8 mt-8 px-2">
         {quotes.map((quote, index) => (
           <Link key={`${index}-${quote._id}`} href={`/quote/${quote._id}`}>
