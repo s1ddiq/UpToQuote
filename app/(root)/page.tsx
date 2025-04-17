@@ -47,7 +47,8 @@ const QuotesPage = () => {
 
   // if (loading)
   //   return (
-  //     <Loader size={32} className="w-full mt-8 text-gray-400 animate-spin" />
+  //     <Loader size={32} className="w-full mt-8 text-gray-400 animate-spin" /
+  // >
   //   );
   return (
     <div className="pt-16 mb-32">
