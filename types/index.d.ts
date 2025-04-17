@@ -22,4 +22,5 @@ interface Quote {
 
 interface New {
   id: string;
+  string: string;
 }
