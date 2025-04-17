@@ -19,3 +19,7 @@ interface Quote {
     dateAdded: string,
     dateModified: string
 }
+
+interface New {
+  id: string;
+}
