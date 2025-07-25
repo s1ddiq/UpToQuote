@@ -14,4 +14,4 @@ UptoQuote is your go-to app for daily doses of inspiration, motivation, and wisd
 ---
 
 Made with ❤️ to keep your day up to quote.
-.
+..
