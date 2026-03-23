@@ -12,6 +12,6 @@ UptoQuote is your go-to app for daily doses of inspiration, motivation, and wisd
 - Share quotes with friends
 
 ---
-WILL BE REMADE IN 2026 UPTOQUOTE
+WILL BE REMADE IN 2026 UPTOQUOTEf
 Made with ❤️ to keep your day up to quote.
 ...
